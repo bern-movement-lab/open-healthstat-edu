@@ -5,14 +5,15 @@ weight: 1
 
 ## Lernziele
 
+{{< callout type="info" >}}
+- Die Studierenden importieren, klassieren und codieren Daten in jamovi.
+- Die Studierenden berechnen, transformieren und selektieren Daten in jamovi.
+- Die Studierenden führen eine einfache deskriptive Analyse in jamovi durch.
+{{< /callout >}}
 
 ## Slides
 
 {{< pdf "/slides/BSc-Intro-Jamovi-light.pdf" >}}
-
-## Screencast
-
-
 
 ## Workshop
 

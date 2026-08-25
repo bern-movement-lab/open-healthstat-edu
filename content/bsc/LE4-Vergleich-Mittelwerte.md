@@ -3,6 +3,10 @@ title: 'Vergleich von Mittelwerten'
 weight: 5
 ---
 
+## Lernziele
+
+> [!IMPORTANT]
+> [siehe Lernziele Vergleich von Mittelwerten im Leitfaden Statistik](https://bern-movement-lab.github.io/statbook/04_compare_means.html#lernziele)
 
 ## Slides
 

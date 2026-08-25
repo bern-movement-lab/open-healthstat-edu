@@ -5,7 +5,7 @@ format:
     revealjs-light:
       slide-number: true
       theme: [default, styles.scss]
-      # footer: "Physiotherapy, Bern Movement Lab"
+      footer: "School of Health Professions"
       logo: "../images/BFH_Logo_A_en_100_RGB.svg"
       # chalkboard: true # only works when not embedding resources
       template-partials:
@@ -13,7 +13,7 @@ format:
     revealjs-dark:
       slide-number: true
       theme: [dark, styles.scss]
-      # footer: "Physiotherapy, Bern Movement Lab"
+      footer: "School of Health Professions"
       logo: "../images/BFH_Logo_A_en_100_RGB.svg"
       # chalkboard: true # only works when not embedding resources
       template-partials:

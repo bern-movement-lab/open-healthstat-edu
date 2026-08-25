@@ -3,6 +3,24 @@ title: 'Deskriptive Statistik'
 weight: 2
 ---
 
+## Lernziele
+
+> [!IMPORTANT]
+> [siehe Lernziele Deskriptive Statistik im Leitfaden Statistik](https://bern-movement-lab.github.io/statbook/01_descriptives.html#lernziele)
+
+<!-- > [!IMPORTANT] -->
+<!-- > - Beschreibe Daten mit den Begriffen Beobachtungseinheit, Beobachtungsmerkmal (= Variable), Ausprägung von Beobachtungsmerkmalen. -->
+<!-- > - Unterscheide quantitative und qualitative Daten. -->
+<!-- >   - Unterscheide bei quantitativen Daten zwischen kontinuierlichen (= stetigen) und diskreten Variablen. -->
+<!-- >   - Unterscheide bei qualitativen Daten zwischen nominalen (= kategoriale) und ordinalen Variablen. -->
+<!-- > - Erwähne bei der Beschreibung von quantitativen Daten die Form der Verteilung und die Kennzahlen der Lage und der Streuung. -->
+<!-- >   - Beschreibe die Verteilung einer Variable als symmetrisch, rechtsschief oder linksschief. -->
+<!-- >   - Nenne Kennzahlen der Lage: Mittelwert \(\bar{x}\), Median \(m\) und Quartile. -->
+<!-- >   - Nenne Kennzahlen der Streuung: Varianz \(s^2\), Standardabweichung \(s\), Variationsbreite\ (= Spannweite) und Interquartilabstand (IQR, engl. interquartile range). -->
+<!-- > - Verwende Histogramme und Boxplots um die Verteilung von quantitativen Daten zu visualisieren. -->
+<!-- > - Definiere *robuste statistische Kennzahlen* wie Median und IQR als Kennzahlen, die wenig von der Verteilungsform und von Extremwerten (Ausreissern) beeinflusst werden. -->
+<!-- > - Verwende Kreuztabellen und Balkendiagramme zur Beschreibung von qualitativen Daten (absolute und relative Häufigkeiten). -->
+
 ## Slides
 
 <!-- <iframe src="/open-healthstat-edu/slides/bsc/LE1_Deskriptive_Statistik.html" -->
