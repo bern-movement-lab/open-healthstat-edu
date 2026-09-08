@@ -1,6 +1,6 @@
 ---
-title: "Vergleich von Mittelwerten"
-# subtitle: "From data to formatted publication"
+title: "Angewandte Statistik Bachelor of Science"
+subtitle: "Vergleich von Mittelwerten"
 author:
   - name: Patric Eichelberger
     email: patric.eichelberger@bfh.ch

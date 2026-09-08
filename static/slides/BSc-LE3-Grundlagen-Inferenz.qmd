@@ -1,6 +1,6 @@
 ---
-title: "Grundlagen Inferenzstatistik"
-# subtitle: "From data to formatted publication"
+title: "Angewandte Statistik Bachelor of Science"
+subtitle: "Grundlagen Inferenzstatistik"
 author:
   - name: Patric Eichelberger
     email: patric.eichelberger@bfh.ch

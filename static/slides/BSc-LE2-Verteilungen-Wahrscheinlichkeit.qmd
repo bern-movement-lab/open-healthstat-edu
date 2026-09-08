@@ -1,6 +1,6 @@
 ---
-title: "Verteilungen von Wahrscheinlichkeiten"
-# subtitle: "From data to formatted publication"
+title: "Angewandte Statistik Bachelor of Science"
+subtitle: "Verteilungen von Wahrscheinlichkeiten"
 author:
   - name: Patric Eichelberger
     email: patric.eichelberger@bfh.ch
@@ -10,4 +10,12 @@ author:
         group: Physiotherapy Research, Bern Movement Lab
 ---
 
-## Inhalt und Lernziele
+## Inhalte
+
+- Zufallsvariable und Wahrscheinlichkeit
+- Wahrscheinlichkeitsverteilung
+- Bedeutung und Merkmale der Normalverteilung
+- Wahrscheinlichkeiten und Quantile der Normalverteilung
+- Prüfen der Normalverteilung mit QQ-Plot
+
+

@@ -16,6 +16,7 @@ weight: 7
 
 ## Screencast
 
+{{< youtube 9j_OYIy0bUk >}}
 ## Workshop
 
 {{< cards cols="1">}}
