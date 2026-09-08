@@ -3,6 +3,10 @@ title: 'Grundlagen Inferenzstatistik'
 weight: 4
 ---
 
+## Lernziele
+
+> [!IMPORTANT]
+> [siehe Lernziele Grundlagen Inferenzstatistik im Leitfaden Statistik](https://bern-movement-lab.github.io/statbook/03_inference.html#lernziele)
 
 ## Slides
 
@@ -11,6 +15,7 @@ weight: 4
 ## Screencast
 
 
+{{< youtube 9j_OYIy0bUk >}}
 
 ## Workshop
 

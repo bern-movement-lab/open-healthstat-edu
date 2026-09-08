@@ -1,6 +1,6 @@
 ---
-title: "Korrelation und Regression"
-# subtitle: "From data to formatted publication"
+title: "Angewandte Statistik Bachelor of Science"
+subtitle: "Korrelation und Regression"
 author:
   - name: Patric Eichelberger
     email: patric.eichelberger@bfh.ch

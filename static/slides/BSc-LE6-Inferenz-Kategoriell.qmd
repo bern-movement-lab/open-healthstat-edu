@@ -1,6 +1,6 @@
 ---
-title: "Inferenz Kategoriell"
-# subtitle: "From data to formatted publication"
+title: "Angewandte Statistik Bachelor of Science"
+subtitle: "Inferenz Kategoriell"
 author:
   - name: Patric Eichelberger
     email: patric.eichelberger@bfh.ch

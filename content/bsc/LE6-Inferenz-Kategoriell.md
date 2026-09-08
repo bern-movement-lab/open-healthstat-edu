@@ -3,6 +3,12 @@ title: 'Inferenz Kategoriell'
 weight: 7
 ---
 
+## Lernziele
+
+> [!IMPORTANT]
+> [siehe Lernziele Inferenz für nominale Daten im Leitfaden Statistik](https://bern-movement-lab.github.io/statbook/08_inf_cat_data.html#lernziele)
+>
+> Relevant sind die Lernziele 1 bis 3 und 7. Wir werden uns mit dem \(\chi^2\) Test und Odds Ratios befassen.
 
 ## Slides
 
@@ -10,6 +16,7 @@ weight: 7
 
 ## Screencast
 
+{{< youtube 9j_OYIy0bUk >}}
 ## Workshop
 
 {{< cards cols="1">}}

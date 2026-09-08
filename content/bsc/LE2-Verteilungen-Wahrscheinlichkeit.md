@@ -3,11 +3,20 @@ title: 'Verteilungen von Wahrscheinlichkeiten'
 weight: 3
 ---
 
+## Lernziele
+
+> [!IMPORTANT]
+> [siehe Lernziele Verteilungen und Wahrscheinlichkeiten im Leitfaden Statistik](https://bern-movement-lab.github.io/statbook/02_prop_distributions.html#lernziele)
+>
+> Das Kapitel 2.4 Binomialverteilung wird in diesem Kurs nicht behandelt.
+
 ## Slides
 
 {{< pdf "/slides/BSc-LE2-Verteilungen-Wahrscheinlichkeit-light.pdf" >}}
 
 ## Screencast
+
+{{< youtube 9j_OYIy0bUk >}}
 
 ## Workshop
 

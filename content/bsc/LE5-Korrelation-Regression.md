@@ -3,6 +3,11 @@ title: 'Korrelation und Regression'
 weight: 6
 ---
 
+## Lernziele
+
+> [!IMPORTANT]
+> - [siehe Lernziele Korrelation im Leitfaden Statistik](https://bern-movement-lab.github.io/statbook/05_correlation.html#lernziele)
+> - [siehe Lernziele Einfache lineare Regression im Leitfaden Statistik](https://bern-movement-lab.github.io/statbook/06_simple_linear-regression.html#lernziele)
 
 ## Slides
 
@@ -10,6 +15,7 @@ weight: 6
 
 ## Screencast
 
+{{< youtube 9j_OYIy0bUk >}}
 ## Workshop
 
 {{< cards cols="1">}}

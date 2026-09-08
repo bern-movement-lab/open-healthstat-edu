@@ -72,3 +72,28 @@ $presentation-author-block-padding-right: if(
     }
   }
 }
+/* -------------- Whole‑element opacity ----------------- */
+.transparent-10 { opacity: 0.10; }   /* very faint   */
+.transparent-30 { opacity: 0.30; }
+.transparent-50 { opacity: 0.50; }   /* half visible */
+.transparent-70 { opacity: 0.70; }
+
+/* -------------- Background‑only transparency ----------- */
+.bg-transparent-30 {
+  background-color: rgba(255,255,255,0.3);   /* white bg @30% */
+}
+.bg-transparent-50 {
+  background-color: rgba(0,0,0,0.5);         /* black bg @50% */
+}
+
+/* -------------- Image‑only opacity (alternative) ----- */
+.img-transparent-30 { filter: opacity(0.3); }
+
+/* -------------- Fade‑in animation for reveal fragments */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.fade-in-fragment {
+  animation: fadeIn 0.8s ease-out forwards;
+}

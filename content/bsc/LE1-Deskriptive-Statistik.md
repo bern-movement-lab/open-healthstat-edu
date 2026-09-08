@@ -3,6 +3,11 @@ title: 'Deskriptive Statistik'
 weight: 2
 ---
 
+## Lernziele
+
+> [!IMPORTANT]
+> [siehe Lernziele Deskriptive Statistik im Leitfaden Statistik](https://bern-movement-lab.github.io/statbook/01_descriptives.html#lernziele)
+
 ## Slides
 
 <!-- <iframe src="/open-healthstat-edu/slides/bsc/LE1_Deskriptive_Statistik.html" -->
