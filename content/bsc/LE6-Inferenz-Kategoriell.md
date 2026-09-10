@@ -19,6 +19,8 @@ weight: 7
 {{< youtube 9j_OYIy0bUk >}}
 ## Workshop
 
+{{< pdf "/slides/BSc-WS6-Inferenz-Kategoriell-light.pdf" >}}
+
 {{< cards cols="1">}}
   {{< card link="https://bern-movement-lab.github.io/statworkshop/bsc/WS6-Inferenz-Kategoriell.html" title="Zum Workshop Inferenzstatistik Kategoriell" icon="link" >}}
 {{< /cards >}}

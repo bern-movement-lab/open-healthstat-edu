@@ -16,7 +16,10 @@ weight: 6
 ## Screencast
 
 {{< youtube 9j_OYIy0bUk >}}
+
 ## Workshop
+
+{{< pdf "/slides/BSc-WS5-Korrelation-Regression-light.pdf" >}}
 
 {{< cards cols="1">}}
   {{< card link="https://bern-movement-lab.github.io/statworkshop/bsc/WS5-Korrelation-Regression.html" title="Zum Workshop Korrelation & Regression" icon="link" >}}

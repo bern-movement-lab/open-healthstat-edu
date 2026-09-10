@@ -1,6 +1,6 @@
 ---
 title: "Angewandte Statistik Bachelor of Science"
-subtitle: "Einführung"
+subtitle: "Workshop Verteilungen von Wahrscheinlichkeiten"
 author:
   - name: Patric Eichelberger
     email: patric.eichelberger@bfh.ch
@@ -740,18 +740,56 @@ Ordne zu.
 
 ![](../images/WS2_DistrExamples_problem.png)
 
-## Aufgabe 2
+## Aufgabe 2 {.smaller}
 
-Flächen der Standard Normalverteilung
+```{r}
+#| echo: false
+#| fig.align: "center"
+# Make a sequence of z-scores between -3 and 3 with a spacing of 0.1
+z_scores <- seq(-3,3,.1)
+
+# Probability density function
+dens = dnorm(z_scores)
+
+df = data.frame(z_scores,dens)
+ggplot() + geom_line(data = df, aes(z_scores,dens), size=2) +
+  ggtitle("Dichtefunktion der Standard-Normalverteilung") +
+  labs(y="Dichte", x="z-Wert") +
+  scale_x_discrete(limits=c(-3,-2,-1,0,1,2,3))
+
+```
+
+- Wie gross ist die gesamte Fläche unter der Standard-Normalverteilung?
+- Wie gross ist die Fläche unter der Standard-Normalverteilung für $z \leq 0$?
+- Wie gross ist die Fläche unter der Standard-Normalverteilung für $z \leq -1.96$?
+- Wie gross ist die Fläche für $-1.96 \leq z \leq 1.96$?
 
 ## Aufgabe 3
 
 Wahrscheinlichkeit der Normalverteilung.
 
+Für diese Aufgabe verwenden wir das Modul **distrAction** in jamovi.
+
+Das Körpergewicht sei normalverteilt mit Mittelwert 65 kg und Standardabweichung 5 kg.
+
+Frage: Wie gross ist die Wahrscheinlichkeit zwischen 55 kg und 75 kg zu wiegen?
+
 ## Aufgabe 4
 
-Körpergewicht: Wahrscheinlichkeit und Quantile
+Wahrscheinlichkeit der Normalverteilung.
 
-## Aufgabe 5
+Für diese Aufgabe verwenden wir das Modul **distrAction** in jamovi.
 
-Normalverteilung Geburtsgewicht.
+Das Körpergewicht sei normalverteilt mit Mittelwert 65 kg und Standardabweichung 5 kg.
+
+Frage: Wie gross ist die Wahrscheinlichkeit zwischen 62.5 kg und 72.8 kg zu wiegen?
+
+## Aufgabe 5 {.smaller}
+
+- Benutze die Datei `NHANES-BW-BH.csv`
+- Annahme: Normalverteilung mit Mittelwert und Standardabweichung des Körpergewichts in der vorliegenden Stichprobe.
+- Wie schwer ist eine Person innerhalb des 95\%-Normbereiches?
+- Wie schwer muss eine Person mindestens sein, damit sie zu den 10\% schwersten Personen gehört?
+- Wie gross ist die Wahrscheinlichkeit, dass eine Person weniger oder 58 kg wiegt?
+- Wie gross ist die Wahrscheinlichkeit, dass eine Person 58 kg oder mehr wiegt?
+

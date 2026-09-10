@@ -1,0 +1,14 @@
+---
+title: "Angewandte Statistik Bachelor of Science"
+subtitle: "Workshop Vergleich von Mittelwerten"
+author:
+  - name: Patric Eichelberger
+    email: patric.eichelberger@bfh.ch
+    affiliations:
+      - name: Bern University of Applied Sciences
+        department: School of Health Professions
+        group: Physiotherapy Research, Bern Movement Lab
+---
+
+## Aufgabe 1 {.smaller}
+
