@@ -227,7 +227,7 @@ Resultate
 
 ## Aufgabe 1 {.smaller}
 
-1. Finde dich in jamovi zurecht und reproduziere die im [Tutorial Jamovi Basics](https://bern-movement-lab.github.io/statworkshop/bsc/Intro-Jamovi.html#jamovi-basics) gezeigten Schritte.
+1. Finde dich in jamovi zurecht und reproduziere die im [Tutorial jamovi Basics](https://bern-movement-lab.github.io/statworkshop/bsc/Intro-Jamovi.html#jamovi-basics) gezeigten Schritte.
 2. Analysiere die Daten getrennt nach Männern und Frauen in jamovi mithilfe der deskriptiven Statistik. Nutze dafür in jamovi die Variable `Geschlecht` als Split-by-Variable.
 3. Speichere deine Analyse als `*.omv` Datei.
 4. Kopiere eine Tabelle und eine Grafik in dein gewohntes Textverarbeitungsprogramm (z.B. Word).
@@ -240,7 +240,7 @@ Bringe die Daten ins Wide-Format (separate Spalten für Männer und Frauen) und 
 
 Siehe [Tutorial Aufgabe 3](https://bern-movement-lab.github.io/statworkshop/bsc/Intro-Jamovi.html#aufgabe-3-1)
 
-Finde dich in jamovi zurecht und reproduziere die im [Tutorial Jamovi Advanced](https://bern-movement-lab.github.io/statworkshop/bsc/Intro-Jamovi.html#jamovi-advanced) gezeigten Schritte zum Codieren, Berechnen und Transformieren von Variablen und zum Filtern von Teilmengen des Datensatzes.
+Finde dich in jamovi zurecht und reproduziere die im [Tutorial jamovi Advanced](https://bern-movement-lab.github.io/statworkshop/bsc/Intro-Jamovi.html#jamovi-advanced) gezeigten Schritte zum Codieren, Berechnen und Transformieren von Variablen und zum Filtern von Teilmengen des Datensatzes.
 
 ## Aufgabe 4 {.smaller}
 

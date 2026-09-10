@@ -13,11 +13,11 @@ weight: 1
 
 ## Slides
 
-{{< pdf "/slides/BSc-Intro-jamovi-light.pdf" >}}
+{{< pdf "/slides/BSc-Intro-Jamovi-light.pdf" >}}
 
 ## Workshop
 
 {{< cards cols="1">}}
-  {{< card link="https://bern-movement-lab.github.io/statworkshop/bsc/Intro-jamovi.html" title="Zum Workshop Intro jamovi" icon="link" >}}
+  {{< card link="https://bern-movement-lab.github.io/statworkshop/bsc/Intro-Jamovi.html" title="Zum Workshop Intro jamovi" icon="link" >}}
 {{< /cards >}}
 

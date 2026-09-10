@@ -24,7 +24,7 @@ make clean
 ## To preview slides for authoring
 
 ``` shell
-quarto preview BSc-Intro-jamovi.qmd --to revealjs-dark --output BSc-Intro-jamovi-dark.html
+quarto preview BSc-Intro-Jamovi.qmd --to revealjs-dark --output BSc-Intro-Jamovi-dark.html
 ```
 
-Replace `BSc-Intro-jmaovi.qmd` and `BSc-Intro-jmaovi-dark.html` with the respective input and output file names.
+Replace `BSc-Intro-Jmaovi.qmd` and `BSc-Intro-Jmaovi-dark.html` with the respective input and output file names.
