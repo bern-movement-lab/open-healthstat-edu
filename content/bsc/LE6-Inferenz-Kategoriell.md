@@ -16,7 +16,10 @@ weight: 7
 
 ## Screencast
 
-{{< youtube 9j_OYIy0bUk >}}
+> [!IMPORTANT]
+> Aufzeichnung der Vorlesung folgt.
+
+<!-- {{< youtube 9j_OYIy0bUk >}} -->
 ## Workshop
 
 {{< pdf "/slides/BSc-WS6-Inferenz-Kategoriell-light.pdf" >}}

@@ -20,11 +20,11 @@ toc: false
 {{< /hextra/hero-subtitle >}}
 </div>
 
-Die Plattform Open HealthStat Edu entsteht an der Berner Fachhochschule und stellt künftig Bildungsressourcen rund um die angewandte Statistik im Umfeld der Gesundheitsprofessionen zur Verfügung.
+Die Plattform Open HealthStat Edu stellt Bildungsressourcen der Berner Fachhochschule Gesundheit zur angewandten Statistik in den Bachelor- und Masterstudiengängen im Umfeld der Gesundheitsprofessionen zur Verfügung.
 
-{{< callout type="info" >}}
-  Die Plattform besteht zur Zeit als Demoversion, mit dem Ziel, Lösungen zu verschiedenen Anwendungsfällen bei der kollaborativen Entwicklung und Pflege sowie Veröffentlichung von Lehr- und Lernmaterialien als Open Educational Resources (OER) aufzuzeigen. Der aktuelle Projektstand erhebt nicht den Anspruch auf Vollständigkeit und Fehlerfreiheit der zur Darstellung der Funktionalitäten verwendeten Inhalte.
-{{< /callout >}}
+<!-- {{< callout type="info" >}} -->
+<!--   Die Plattform besteht zur Zeit als Demoversion, mit dem Ziel, Lösungen zu verschiedenen Anwendungsfällen bei der kollaborativen Entwicklung und Pflege sowie Veröffentlichung von Lehr- und Lernmaterialien als Open Educational Resources (OER) aufzuzeigen. Der aktuelle Projektstand erhebt nicht den Anspruch auf Vollständigkeit und Fehlerfreiheit der zur Darstellung der Funktionalitäten verwendeten Inhalte. -->
+<!-- {{< /callout >}} -->
 
 ## Erkunden
 

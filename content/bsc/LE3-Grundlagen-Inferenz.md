@@ -15,7 +15,10 @@ weight: 4
 ## Screencast
 
 
-{{< youtube 9j_OYIy0bUk >}}
+> [!IMPORTANT]
+> Aufzeichnung der Vorlesung folgt.
+
+<!-- {{< youtube 9j_OYIy0bUk >}} -->
 
 ## Workshop
 

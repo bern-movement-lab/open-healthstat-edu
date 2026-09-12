@@ -5,16 +5,16 @@ format:
     revealjs-light:
       slide-number: true
       theme: [default, styles.scss]
-      footer: "School of Health Professions"
-      logo: "../images/BFH_Logo_A_en_100_RGB.svg"
+      footer: "BFH School of Health Professions"
+      # logo: "../images/BFH_Logo_A_en_100_RGB.svg"
       # chalkboard: true # only works when not embedding resources
       template-partials:
         - title-slide.html
     revealjs-dark:
       slide-number: true
       theme: [dark, styles.scss]
-      footer: "School of Health Professions"
-      logo: "../images/BFH_Logo_A_en_100_RGB.svg"
+      footer: "BFH School of Health Professions"
+      # logo: "../images/BFH_Logo_A_en_100_RGB.svg"
       # chalkboard: true # only works when not embedding resources
       template-partials:
         - title-slide.html
