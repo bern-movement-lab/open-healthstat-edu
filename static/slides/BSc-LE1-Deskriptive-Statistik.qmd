@@ -24,9 +24,14 @@ author:
   - Balkendiagramm
   - Kreuztabelle
 
+::: {.notes}
+- give me some hints
+:::
+
 ## Modul Angewandte Statistik {.smaller}
+:::: {.columns}
 
-
+::: {.column width="50%"}
 ::: {.callout-note}
 ## Inferenzielle (schliessende) Statistik
 
@@ -35,16 +40,26 @@ author:
 - Liefert Angaben bis zu welchem Grad man den Schätzungen vertrauen kann.
 
 :::
+:::
 
-![](../images/Deskr-Inf-Stats.jpg){fig-align="center" height=50mm}
-
+::: {.column width="50%"}
 ::: {.callout-note}
 ## Deskriptive (beschreibende) Statistik
 
-- Daten einer Stichprobe (engl. sample) zusammenfassend beschreiben. Keine Verallgemeinerung der Ergebnisse.
+- Daten einer Stichprobe zusammenfassend beschreiben. Keine Verallgemeinerung der Ergebnisse.
 - Kennzahlen der Lage (z.B. Mittelwert, Median) und Streuung (z.B. Standardabweichung, Interquartilsabstand).
 - Grafisch: Boxplot und Histogramm, Tabellarisch: Kreuztabellen.
 
+:::
+:::
+::::
+
+![](../images/population-stichprobe.png){fig-align="center"}
+
+::: {.notes}
+- Um was geht es im Modul im Allgemeinen
+- Wo ist die deskriptive Statistik verortet?
+- Bsp. Population: Körpergrösse von Erwachsenen in der CH.
 :::
 
 ## Grundbegriffe {.smaller}
@@ -72,7 +87,7 @@ author:
 ::: {.callout-note}
 ## Merkmalsausprägungen
 
-- Konkrete Werte von Beobachtungsmerkmalen (z.B. Körpergrösse = 170 cm)
+- Konkrete Werte von Beobachtungsmerkmen (z.B. Körpergrösse = 170 cm)
 - Wert in Zelle in Datentabelle
 
 :::
@@ -115,6 +130,11 @@ head(df.stud, 5) |>
 
 ::::
 
+::: {.notes}
+- Es gibt auch andere Merkmalstypen als die Körpergrösse.
+- Für Analyse muss der Merkmalstyp berücksichtigt werden.
+:::
+
 ## Merkmalstypen (Skalenniveaus) {.smaller}
 
 | Typ                        | Beschreibung                            | Beispiel                                         |
@@ -134,8 +154,9 @@ head(df.stud, 5) |>
 :::
 
 ::: {.notes}
-- Rational: Verhältnisse bilden möglich.
-- Intervall: 0 Grad heisst nicht keine Wärme. IQ = 0 heisst nicht keine Intelligenz.
+- Es gibt auch andere Merkmalstypen als die Körpergrösse.
+- Für Analyse muss der Merkmalstyp berücksichtigt werden.
+- Grobe Unterteilung in qualitativ und quantitativ
 :::
 
 # Quantitative Merkmale
@@ -191,6 +212,10 @@ ggplot(df.stud, mapping = aes(x = "", y = Groesse)) +
 :::
 ::::
 
+::: {.notes}
+- Unterscheiden nach Kennzahlen und grafischen Methoden
+:::
+
 ## Quantitative Merkmale
 
 :::: {.columns}
@@ -245,6 +270,11 @@ ggplot(df.stud, mapping = aes(x = "", y = Groesse)) +
 :::
 ::::
 
+::: {.notes}
+- Beschrieb der zentralen Tendenz eines Merkmals
+- Beschrieb von Teilmengen und Anteilen: wie gross sind die 10% grössten Erwachsenen
+:::
+
 ## Mittelwert {.smaller}
 
 :::: {.columns}
@@ -276,6 +306,10 @@ $$
 $$
 :::
 
+::: {.notes}
+- give me some hints
+:::
+
 <!-- ## Einfluss extremer Werte auf den Mittelwert -->
 
 <!-- ## Mittelwert als statistisches Modell -->
@@ -285,6 +319,10 @@ $$
 Der Median teilt die Stichprobe in zwei Hälften. 50% der Daten sind kleiner als der Median, 50% der Daten sind grösser als der Median. Der Median ist sozusagen der Wert in der Mitte.
 
 ![](../images/Bsp_Median_Koerpergroesse_odd.png){fig-align="center"}
+
+::: {.notes}
+- give me some hints
+:::
 
 ## Median: Ungerades $n$ {.smaller}
 
@@ -321,6 +359,10 @@ $$
 $$
 :::
 
+::: {.notes}
+- give me some hints
+:::
+
 ## Median: Gerades $n$
 
 :::: {.columns}
@@ -335,6 +377,10 @@ $$
 :::
 
 ::::
+
+::: {.notes}
+- give me some hints
+:::
 
 ## Median: Gerades $n$ (cont.) {.smaller}
 
@@ -371,6 +417,12 @@ $$
 $$
 :::
 
+::: {.notes}
+- typischer Wert in der Mitte oder durchschnittlicher Wert?
+- Verwendung von Mittelwert oder Median hängt von der Verteilung der Daten ab
+- Welche Auswertungsmethoden sollen weiter verwendet werden? (parametrisch/nicht-parametrisch)
+:::
+
 ## Min, Max & Quantile {.smaller}
 
 :::: {.columns}
@@ -391,6 +443,10 @@ $$
 
 ::::
 
+::: {.notes}
+- give me some hints
+:::
+
 ## Min, Max & Quantile {.smaller}
 
 :::: {.columns}
@@ -408,6 +464,10 @@ $$
 :::
 
 ::::
+
+::: {.notes}
+- give me some hints
+:::
 
 ## Quantitative Merkmale
 
@@ -463,6 +523,44 @@ ggplot(df.stud, mapping = aes(x = "", y = Groesse)) +
 :::
 ::::
 
+::: {.notes}
+- give me some hints
+:::
+
+## Strahlungskennzahlen
+
+```{r}
+#| out.width: "70%"
+#| fig.align: "center"
+#| fig.width: 8
+#| fig.height: 3
+set.seed(2)
+data <- tibble(
+  sample = c(rep("A", 20), rep("B", 20)),
+  x = c(rnorm(20, mean = 0, sd = 0.2), rnorm(20, mean = 0, sd = 1)),
+  y = c(rep(1, 20), rep(2, 20))
+)
+
+ggplot(data, aes(x = x, y = y, color = sample)) +
+  geom_point(size = 3, alpha = .6) +
+  theme_minimal() +
+  ylim(0, 3) +
+  theme(panel.grid = element_blank(),
+        axis.title = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank()) +
+  geom_vline(xintercept = 0)
+
+```
+
+- Trotz gleichem Mittelwert kann nicht behauptet werden, dass die Stichproben aus der gleichen Verteilung stammen.
+- Beobachtungen der Stichprobe *B* streuen mehr.
+- Kennzahlen der Streuung quantifizieren diese Eigenschaft.
+
+::: {.notes}
+- Mittelwert erklärt die Daten von *A* besser, weil die Werte näher am Mittelwert liegen.
+:::
+
 ## Spannweite und IQR
 
 :::: {.columns}
@@ -496,6 +594,10 @@ $\mathrm{IQR} = Q_3-Q_1$
 :::
 
 ::::
+
+::: {.notes}
+- give me some hints
+:::
 
 ## Varianz und Standardabweichung {.smaller}
 
@@ -576,6 +678,11 @@ ggplot(df, aes(x = ID, y = Groesse)) +
     theme(text = element_text(size = 22)) +
     xlim(0.5, 5.5)
 ```
+
+::: {.notes}
+- give me some hints
+:::
+
 ## Varianz und Standardabweichung {.smaller}
 ```{r}
 #| fig.align: "center"
@@ -639,6 +746,10 @@ s=\sqrt{62.7}=7.9
 $$
 :::
 
+::: {.notes}
+- give me some hints
+:::
+
 ## Quantitative Merkmale
 
 :::: {.columns}
@@ -688,7 +799,14 @@ ggplot(df.stud, mapping = aes(x = "", y = Groesse)) +
 :::
 ::::
 
-## Histogramm
+::: {.notes}
+- Ein Bild sagt mehr als 1000 Worte
+- Visuell können wir rascher Tatsachen auffassen, als aus Kennzahlen und komplexen Tabellen
+- Muster erkennen und kommunizieren
+- Rasch Verteilungen beurteilen und Stichproben leicht miteinander vergleichen.
+:::
+
+## Histogramm {.smaller}
 
 ```{r}
 #| out.width: "80%"
@@ -721,6 +839,22 @@ p4 <- ggplot(df.stud_w, aes(x = Groesse)) +
 (p1 | p2) /
     (p3 | p4)
 ```
+
+- Anzahl Klassen $n_k \approx \sqrt{n}$
+- Richtwert Anzahl Klassen: 5 bis 20 > Sinnvoll ab $n = 40$
+
+::: {.notes}
+- Beurteilung
+  - Variabilität der Daten (z.B. Streubreite)
+  - Am meisten vorkommende Werte
+  - Symmetrie
+- Klassenbreite ist elementar fürs Erscheinungsbild
+- Anzahl Klassen $\sqrt{n}$. Richtwert 5 bis 20 Klassen > ca. ab $n=50$
+- Zu schmale Klassen: fehlende Balken
+- Zu breite Balken: Verlust an Details
+- Keine Lücken zwischen Balken (x-Achse Kontinuum)
+:::
+
 ## Boxplot
 
 ```{r}
@@ -746,11 +880,6 @@ p2 <- ggplot(df.stud_w, mapping = aes(x = "", y = Groesse)) +
         aes(x, y),
         rotate = 90, size = 0.7, col = "steelblue"
     ) +
-    ## annotate("text",
-    ##          x = 2.5, y = mean(c(q1_groesse, q3_groesse)),
-    ##          label = "IQR",
-    ##          hjust = 0, vjust = 0.5,
-    ##          colour = "gray40", size = 6) +
     geom_label(
         aes(
             x = 2.5, # shifted x‑position
@@ -768,11 +897,6 @@ p2 <- ggplot(df.stud_w, mapping = aes(x = "", y = Groesse)) +
         aes(x, y),
         rotate = 90, size = .7, col = "steelblue"
     ) +
-    ## annotate("text",
-    ##          x = 2.5, y = mean(c(q3_groesse, q3_groesse + 1.5*iqr_groesse)),
-    ##          label = "1.5 IQR",
-    ##          hjust = 0, vjust = 0.5,
-    ##          colour = "gray40", size = 6) +
     geom_label(
         aes(
             x = 2.5, # shifted x‑position
@@ -790,11 +914,6 @@ p2 <- ggplot(df.stud_w, mapping = aes(x = "", y = Groesse)) +
         aes(x, y),
         rotate = 90, size = .7, col = "steelblue"
     ) +
-    ## annotate("text",
-    ##          x = 2.5, y = mean(c(q1_groesse, q1_groesse - 1.5*iqr_groesse)),
-    ##          label = "1.5 IQR",
-    ##          hjust = 0, vjust = 0.5,
-    ##          colour = "gray40", size = 6) +
     geom_label(
         aes(
             x = 2.5, # shifted x‑position
@@ -807,11 +926,6 @@ p2 <- ggplot(df.stud_w, mapping = aes(x = "", y = Groesse)) +
         size = 6,
         hjust = 0
     ) + # left‑justify so it sits right of the point
-    ## annotate("text",
-    ##          x = 1.5, y = median_groesse,
-    ##          label = "Median",
-    ##          hjust = 0, vjust = 0.5,
-    ##          colour = "gray40", size = 6) +
     geom_label(
         aes(
             x = 1.5, # shifted x‑position
@@ -824,11 +938,6 @@ p2 <- ggplot(df.stud_w, mapping = aes(x = "", y = Groesse)) +
         size = 6,
         hjust = 0
     ) + # left‑justify so it sits right of the point
-    ## annotate("text",
-    ##          x = 1.5, y = q1_groesse,
-    ##          label = "1. Quartil",
-    ##          hjust = 0, vjust = 0.5,
-    ##          colour = "gray40", size = 6) +
     geom_label(
         aes(
             x = 1.5, # shifted x‑position
@@ -841,11 +950,6 @@ p2 <- ggplot(df.stud_w, mapping = aes(x = "", y = Groesse)) +
         size = 6,
         hjust = 0
     ) + # left‑justify so it sits right of the point
-    ## annotate("text",
-    ##          x = 1.5, y = q3_groesse,
-    ##          label = "3. Quartil",
-    ##          hjust = 0, vjust = .5,
-    ##          colour = "gray40", size = 6) +
     geom_label(
         aes(
             x = 1.5, # shifted x‑position
@@ -865,13 +969,29 @@ p2
 ```
 
 ::: {.notes}
-- Wichtige Darstellungsmöglichkeit für quantitative Daten.
-- Auch Box-Whisker-Plot genannt.
-- Als Richtwert ab einer Stichprobengrösse von $n=15$ einsetzen. Ansonsten Streudiagramm verwenden um einzelne Datenpunkte darzustellen.
+- Wichtige Darstellungsmöglichkeit für quantitative Merkmale: Verteilungen visualisieren, Gruppen oder Zeitpunkte vergleichen, Auffällige Werte entdecken.
+- Beurteilung:
+  - Spannweite
+  - Lage der zentralen 50% der Daten (IQR)
+  - Lage des Medians
+  - Verteilung der Daten
+- Symmetrie der Daten: Median in der Mitte der Box
 - Überlagerung mit einzelnen Datenpunkten bei kleinen Stichproben sinnvoll.
-- Symmetrie der Daten: Whiskers etwa gleich lang
 :::
 
+## Boxplot Gruppenvergleich
+
+```{r}
+#| out.width: "80%"
+#| fig.align: "center"
+
+ggplot(df.stud, mapping = aes(x = Geschlecht, y = Groesse)) +
+  # geom_boxplot(outlier.shape = 8, outlier.size = 3, outlier.color = "red") +
+  geom_boxplot() +
+  ## geom_jitter(position = position_jitter(0.2), size = 1) +
+  labs(y = "Körpergrösse (cm)") +
+  theme(text = element_text(size = 22))
+```
 ## Histogramm vs. Boxplot
 
 ```{r}
@@ -889,6 +1009,10 @@ p2 <- ggplot(df.stud, mapping = aes(x = Groesse, y = "")) +
     theme(text = element_text(size = 22))
 p1 / p2
 ```
+
+::: {.notes}
+- give me some hints
+:::
 
 ## Robustheit
 
@@ -1044,6 +1168,14 @@ p4m <- p2 +
     (p3m | p4m)
 ```
 
+::: {.notes}
+- Alter von 11, resp. 13 Personen (rechts)
+- Linke Seite Daten ohne Ausreisser
+- Rechte Seite Daten mit Ausreissern
+- Median und IQR bleiben gleich/ähnlich
+- Mittelwert und SD werden grösser
+:::
+
 ## Symmetrie und Schiefe
 
 ```{r}
@@ -1166,6 +1298,10 @@ plt_skewedneg_hist_nolabels <- ggplot(distrdf, aes(x = negskewsamples)) +
 (plt_norm_hist_nolabels | plt_skewedpos_hist_nolabels | plt_skewedneg_hist_nolabels)
 ```
 
+::: {.notes}
+- Kreuztabelle und Balkendiagramm als Methoden der deskriptiven Statistik
+:::
+
 # Qualitative Merkmale {.smaller}
 
 ```{r}
@@ -1257,6 +1393,10 @@ bar
 :::
 ::::
 
+::: {.notes}
+- give me some hints
+:::
+
 ## Kreuztabellen
 
 :::: {.columns}
@@ -1292,12 +1432,23 @@ df.coff |>
 
 ::::
 
+::: {.notes}
+- Links: Ausschnitt der ersten 7 Beobachtugnsheiten
+- Rechts: Kreuztabelle
+- Kreuztabelle: absolute und relative Häufigkeiten
+:::
+
 ## Balkendiagramm
 
 ```{r}
 (bar | barstacked) /
     (barRel | barstackedRel)
 ```
+
+::: {.notes}
+- Absolute Anzahl in der Gruppe
+- Relative Häufigkeit in der Gruppe
+:::
 
 ## Tortendiagramm
 
@@ -1353,6 +1504,13 @@ pie <- df |>
 (bar) /
     (pie)
 ```
+
+::: {.notes}
+- Häufig sieht man Tortendiagramme in "eifachen" Infografiken
+- Menschliches Auge kann Unterschiede von Kreissektoren und Flächen schlecht beurteilen
+- In den Tortendiagrammen sind im Verleich zu den Balkendiagrammen die Unterschiede schlecht sichtbar
+- Kleine Anteile in Tortendiagrammen schlecht zu erkennen
+:::
 
 ## Zusammenfassung {.smaller}
 
@@ -1412,3 +1570,7 @@ ggplot(df.stud, mapping = aes(x = "", y = Groesse)) +
 :::
 
 ::::
+
+::: {.notes}
+- give me some hints
+:::

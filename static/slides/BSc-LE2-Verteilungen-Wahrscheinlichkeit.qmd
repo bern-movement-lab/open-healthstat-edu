@@ -547,22 +547,30 @@ Aus diesen Gründen gibt es viele Tests und Schätzer, die die Normalverteilung 
 
 ## Anmerkungen zur Notation {.smaller}
 
+:::: {.columns}
+
+::: {.column width="50%"}
+
 ::: {.center}
 |                    |          |
 |--------------------|----------|
 | Mittelwert         | $\mu$    |
 | Standardabweichung | $\sigma$ |
-|                    |          |
+:::
 :::
 
-![](../images/Deskr-Inf-Stats.jpg){fig-align="center" height=50mm}
-
+::: {.column width="50%"}
 ::: {.center}
-|                    |                                          |
-|--------------------|------------------------------------------|
-| Mittelwert         | $\hat{\mu} = \bar{x}$                    |
-| Standardabweichung | $\hat{\sigma} = s$ (oft auch sd oder SD) |
+|                    |                       |
+|--------------------|-----------------------|
+| Mittelwert         | $\hat{\mu} = \bar{x}$ |
+| Standardabweichung | $\hat{\sigma} = s$    |
 :::
+
+:::
+::::
+
+![](../images/population-stichprobe.png){fig-align="center"}
 
 ::: {.notes}
 - Populationskennzahlen (auch Stichprobenparameter): griechische Buchstaben
