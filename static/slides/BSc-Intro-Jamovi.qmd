@@ -38,6 +38,9 @@ author:
 Learn more: [Foot Biomechanics and Technology Research Group](https://www.bfh.ch/en/research/research-areas/foot-biomechanics-and-technology/)
 :::
 
+::: {.notes}
+- give me some notes
+:::
 ## Über Aglaja {.smaller}
 
 
@@ -73,6 +76,9 @@ Learn more: [Foot Biomechanics and Technology Research Group](https://www.bfh.ch
 Learn more: [BFH Aglaja Busch](https://www.bfh.ch/de/ueber-die-bfh/personen/2rtqordmzaqr/)
 :::
 
+::: {.notes}
+- give me some notes
+:::
 ## Über Melanie {.smaller}
 
 :::: {.columns}
@@ -101,6 +107,9 @@ Learn more: [BFH Aglaja Busch](https://www.bfh.ch/de/ueber-die-bfh/personen/2rtq
 Learn more: [BFH Melanie Liechti](https://www.bfh.ch/de/ueber-die-bfh/personen/jnbqzwmzp5kl/)
 :::
 
+::: {.notes}
+- give me some notes
+:::
 ## Studien verstehen
 
 ![](../images/Bernitz1.png){fig-align="center" width=50%}
@@ -147,6 +156,12 @@ Messgrösse
  [Bernitz et al., 2016, BMC Pregnancy and Childbirth](https://doi.org/10.1186/s12884-016-0932-x)
 :::
 
+::: {.notes}
+- Demonstrieren welche Begriffe bekannt sein müssen um Studien zu verstehen
+- LADSI: Labour and Delivery Status Index. Wem ist der bekannt?
+- Geburtenabteilung vs. Geburtshilfestation in Norwegen; Low-risk Geburten. **nicht auf inhaltliche Details eingehen**
+- Englisch ist natürlich Voraussetzung, die statistische Sprache ist jedoch universell
+:::
 ## Studien verstehen (cont.)
 
 <!-- ::: {layout="[30,70]" layout-valign="center"} -->
@@ -179,6 +194,18 @@ Resultate
  [Bernitz et al., 2016, BMC Pregnancy and Childbirth](https://doi.org/10.1186/s12884-016-0932-x)
 :::
 
+::: {.notes}
+- Powerberechnungen
+- t-Test, 5% Signifikanzniveau
+- Klinisch relevante Unterschiede (hier 7, aus welchem Grund auch immer)
+- Mittlere Differenzen
+- Vertrauensintervalle
+- Resultate
+  - MU: midwifery unit
+  - OU: obstetric unit
+  - All: LADSI über alle Arten von Geburten
+  - Was bedeuten die Differenzen? Ist MU oder OU grösser?
+:::
 ## Kursinhalt {.smaller}
 
 - Kursinformation und Einführung Statistiksoftware
@@ -215,6 +242,12 @@ Resultate
 
 :::
 
+::: {.notes}
+- Beginnen mit Aufbau Moodle - OER Plattform
+- In jeder Lerneinheit gibt es einen Theorieinput mit anschliessendem Workshop zu Anwendung und Vertiefung
+- Orientierung am Skript
+- In Q&A Sessions und im bSST bringen wir keine neuen Inhalte
+:::
 ## Gestaltung von Tabellen
 
 ::: {layout-ncol=2}
@@ -225,6 +258,10 @@ Resultate
 
 :::
 
+::: {.notes}
+- Wide: Personen in einer Zeile, Gruppierung in Variablenname
+- Long: Eine Spalte pro Variable plus Gruppierungsvariablen
+:::
 ## Aufgabe 1 {.smaller}
 
 1. Finde dich in jamovi zurecht und reproduziere die im [Tutorial jamovi Basics](https://bern-movement-lab.github.io/statworkshop/bsc/Intro-Jamovi.html#jamovi-basics) gezeigten Schritte.

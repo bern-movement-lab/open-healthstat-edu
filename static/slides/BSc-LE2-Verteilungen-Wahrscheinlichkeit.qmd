@@ -20,6 +20,11 @@ author:
 - Wahrscheinlichkeiten und Quantile der Normalverteilung
 - Beurteilung der Normalverteilung von Variablen mit QQ-Plot
 
+::: {.notes}
+- Es geht um den Begriff des Zufalls und Wahrscheinlichkeiten
+- Wahrscheinlichkeiten sind verteilt
+- Im Speziellen oft normalverteilt
+:::
 ## 
 
 ::: {.callout-note}
@@ -41,6 +46,7 @@ author:
 :::
 
 ::: {.notes}
+- Zufallsexperiment > Zufallsvariable
 - Zufallsvatiable: Grösse, deren Wert vom Zufall abhängig ist.
 - Formal: Eine Funktion, die jedem Möglichen Ereignis eines Zufallsexperiments einen Wert zuordnet.
 :::
@@ -69,6 +75,9 @@ $$
 Die Augenzahl ist gleichverteilt (bei einem fairen Würfel).
 :::
 
+::: {.notes}
+- give some hints
+:::
 ## Farben vom M&Ms {.smaller}
 
 ```{r}
@@ -204,6 +213,9 @@ pmmprob
 - Diese Wahrscheinlichkeit ist nicht mehr gleichverteilt.
 :::
 
+::: {.notes}
+- give some hints
+:::
 ## Augenzahlsumme Würfeln
 
 ```{r}
@@ -284,6 +296,9 @@ p4i <- ggdraw() + draw_plot(p4) +
   plot_annotation(title = sprintf("Häufigkeiten von Augenzahlsummen bei %.0f Würfen", numrolls))
 ```
 
+::: {.notes}
+- give some hints
+:::
 ## Körpergewicht
 
 ```{r}
@@ -325,6 +340,9 @@ phist
 [Datenquelle: NHANES 2015-2016 ](https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overview.aspx?BeginYear=2015)
 :::
 
+::: {.notes}
+- give some hints
+:::
 ## Dichte- und Verteilungsfunktion {.smaller}
 
 :::: {.columns}
@@ -372,6 +390,9 @@ Die empirische Verteilungsfunktion $F_n$ schätzt die Verteilungsfunktion (auch 
 :::
 ::::
 
+::: {.notes}
+- give some hints
+:::
 ## Dichte- und Verteilungsfunktion {.smaller}
 
 ```{r}
@@ -451,6 +472,9 @@ $$
 - Die Verteilungsfunktion an der Stelle $x$ ist die Fläche unter der Dichtefunktion bis zu Stelle $x$.
 :::
 
+::: {.notes}
+- give some hints
+:::
 ## Normalverteilung {.smaller}
 
 - Die Normalverteilung hat die zwei Parameter $\mu$ (Mittelwert) und $\sigma$ (Standardabweichung).
@@ -577,6 +601,9 @@ Aus diesen Gründen gibt es viele Tests und Schätzer, die die Normalverteilung 
 - Stichprobenkennzahlen: lateinische Buchstaben
 :::
 
+::: {.notes}
+- give some hints
+:::
 ## z-Werte und Standardisierung {.smaller}
 
 - Anna und Tom möchten in den USA studieren. Dazu müssen Sie einen Aufnahmeverfahren durchlaufen, das u.a. Tests zu Mathe, Lesen und kreativem Schreiben umfasst. Es gibt davon zwei Varianten: den SAT (Scholastic Assessment Test) und den ACT (American College Test).
@@ -596,6 +623,9 @@ Aus diesen Gründen gibt es viele Tests und Schätzer, die die Normalverteilung 
 Wer von beiden hat das bessere Resultat erzielt?
 :::
 
+::: {.notes}
+- give some hints
+:::
 ## z-Werte und Standardisierung {.smaller}
 
 :::: {.columns}
@@ -689,6 +719,9 @@ pz <- pdens +
 - Anna hat also besser abgeschnitten: ihr Score liegt relativ gesehen weiter oberhalb des mittleren Scores.
 :::
 
+::: {.notes}
+- give some hints
+:::
 ## Flächen unter der Normalverteilung {.smaller}
 
 ```{r}
@@ -709,6 +742,9 @@ pz <- pdens +
 - Gesamtfläche unter Normalverteilungskurve ist immer 1 (100% der Beobachtungen).
 - Flächenanteile unter der Kurve entsprechen Häufigkeiten.
 
+::: {.notes}
+- give some hints
+:::
 ## Flächen unter der Normalverteilung {.smaller}
 
 :::: {.columns}
@@ -797,6 +833,9 @@ z_df |>
 :::
 ::::
 
+::: {.notes}
+- give some hints
+:::
 ## 68 - 95 - 99.7 Regel {.smaller}
 
 :::: {.columns}
@@ -885,6 +924,9 @@ pregel
 - Die 68-95-99.7 Regel erlaubt es, den Anteil der Werte innerhalb einer bestimmten Distanz vom Mittelwert zu bestimmen.
 :::
 
+::: {.notes}
+- give some hints
+:::
 ## Prüfen auf Normalverteilung {.smaller}
 
 
@@ -971,7 +1013,7 @@ mean_posskew <- mean(posskewsamples)
 median_posskew <- median(posskewsamples)
 mean_negskew <- mean(negskewsamples)
 median_negskew <- median(negskewsamples)
-############################# Histogram Normalverteilung ##################################
+###### Histogram Normalverteilung #####
 plt_norm_hist_nolabels <- ggplot(distrdf, aes(x = normsamples)) +
     # geom_histogram(binwidth = binwidth, colour="black", fill="white") +
     geom_histogram(aes(y = ..density..), binwidth = binwidth, colour = "black", fill = "white") +
@@ -981,19 +1023,19 @@ plt_norm_hist_nolabels <- ggplot(distrdf, aes(x = normsamples)) +
         dnorm(x=x, mean=mean, sd=sd)}, args = c(mean = mn, sd = sd), colour="blue") +
     ## geom_vline(xintercept = mean_norm, color = "gray40", linewidth = 1) +
     ## geom_vline(xintercept = median_norm, color = "gray40", linewidth = 1, linetype = "dashed") +
-    labs(x = "", y = "", title = "Normalverteilung") +
+    labs(x = "", y = "", title = sprintf("Normalverteilung n = %.0f", n)) +
   theme(text = element_text(size = fsize),
         axis.text.y = element_blank(),
         axis.ticks.y = element_blank()) +
   xlim(xmin, xmax)
 
-############################# QQ-Plot Normalverteilung ##################################
+##### QQ-Plot Normalverteilung ######
 plt_norm_qq_nolabels <- ggplot(distrdf, aes(sample=normsamples)) + stat_qq() +
   stat_qq_line() +
   labs(x = "", y = "") +
   theme(text = element_text(size = fsize))
 
-############################# Boxplot Normalverteilung ##################################
+###### Boxplot Normalverteilung ######
 plt_norm_bp_nolabels <- ggplot(distrdf, aes(x=normsamples)) +
   geom_boxplot() +
   labs(title = "", x = "", y = "") +
@@ -1002,7 +1044,7 @@ plt_norm_bp_nolabels <- ggplot(distrdf, aes(x=normsamples)) +
         axis.ticks.y = element_blank()) +
   xlim(xmin,xmax)
 
-############################# Histogram Rechtsschief ##################################
+####### Histogram Rechtsschief #######
 plt_skewedpos_hist_nolabels <- ggplot(distrdf, aes(x = posskewsamples)) +
     # geom_histogram(binwidth = binwidth, colour="black", fill="white") +
   geom_histogram(aes(y = ..density..), binwidth = binwidth, colour = "black", fill = "white") +
@@ -1014,18 +1056,18 @@ plt_skewedpos_hist_nolabels <- ggplot(distrdf, aes(x = posskewsamples)) +
     args = c(mean = mn, sd = sd), colour="blue") +
     ## geom_vline(xintercept = mean_posskew, color = "gray40", linewidth = 1) +
     ## geom_vline(xintercept = median_posskew, color = "gray40", linewidth = 1, linetype = "dashed") +
-  labs(x = "", y = "", title = "Rechtsschief") +
+  labs(x = "", y = "", title = sprintf("Rechtsschief n = %.0f", n)) +
   theme(text = element_text(size = fsize),
         axis.text.y = element_blank(),
         axis.ticks.y = element_blank()) +
   xlim(xmin, xmax)
 
-############################# QQ-Plot Rechtsschief ##################################
+####### QQ-Plot Rechtsschief ######
 plt_skewedpos_qq_nolabels <- ggplot(distrdf, aes(sample=posskewsamples)) + stat_qq() +
   stat_qq_line() +
   labs(x = "", y = "") +
   theme(text = element_text(size = fsize))
-############################# Boxplot Rechtsschief ##################################
+###### Boxplot Rechtsschief ######
 plt_skewedpos_bp_nolabels <- ggplot(distrdf, aes(x=posskewsamples)) +
   geom_boxplot() +
   labs(title = "", x = "", y = "") +
@@ -1034,7 +1076,7 @@ plt_skewedpos_bp_nolabels <- ggplot(distrdf, aes(x=posskewsamples)) +
         axis.ticks.y = element_blank()) +
   xlim(xmin,xmax)
 
-############################# Histogram Rechtsschief ##################################
+##### Histogram Rechtsschief ######
 plt_kurtneg_hist_nolabels <- ggplot(distrdf, aes(x = negkurtsamples)) +
     # geom_histogram(binwidth = binwidth, colour="black", fill="white") +
   geom_histogram(aes(y = ..density..), binwidth = binwidth, colour = "black", fill = "white") +
@@ -1046,18 +1088,18 @@ plt_kurtneg_hist_nolabels <- ggplot(distrdf, aes(x = negkurtsamples)) +
     args = c(mean = mn, sd = sd), colour="blue") +
     ## geom_vline(xintercept = mean_posskew, color = "gray40", linewidth = 1) +
     ## geom_vline(xintercept = median_posskew, color = "gray40", linewidth = 1, linetype = "dashed") +
-  labs(x = "", y = "", title = "Flachgipflig") +
+  labs(x = "", y = "", title = sprintf("Flachgipflig n = %.0f", n)) +
   theme(text = element_text(size = fsize),
         axis.text.y = element_blank(),
         axis.ticks.y = element_blank()) +
   xlim(xmin, xmax)
 
-############################# QQ-Plot Rechtsschief ##################################
+####### QQ-Plot Rechtsschief ######
 plt_kurtneg_qq_nolabels <- ggplot(distrdf, aes(sample=negkurtsamples)) + stat_qq() +
   stat_qq_line() +
   labs(x = "", y = "") +
   theme(text = element_text(size = fsize))
-############################# Boxplot Rechtsschief ##################################
+####### Boxplot Rechtsschief ######
 plt_kurtneg_bp_nolabels <- ggplot(distrdf, aes(x=negkurtsamples)) +
   geom_boxplot() +
   labs(title = "", x = "", y = "") +
@@ -1083,8 +1125,10 @@ Die Normalverteilung spielt eine sehr wichtige Rolle in der Wahrscheinlichkeitst
 - Aus diesen Gründen gibt es viele Tests und Schätzer, welche die Normalverteilung als Voraussetzung haben.
 :::
 
+::: {.notes}
+- give some hints
+:::
 ## QQ-Plot: Beispiele
-
 
 ```{r}
 #| echo: false
@@ -1098,6 +1142,121 @@ Die Normalverteilung spielt eine sehr wichtige Rolle in der Wahrscheinlichkeitst
   (plt_norm_qq_nolabels | plt_skewedpos_qq_nolabels | plt_kurtneg_qq_nolabels)
 
 ```
+
+::: {.notes}
+- give some hints
+:::
+
+## {.smaller}
+
+::: {.callout-important}
+## QQ-Plot für kleine Stichproben
+- Die Interpretation von QQ-Plots für kleine Stichproben ist schwierig und nicht immer ganz eindeutig möglich.
+- Mindestens $n=30$. **Wenn kleiner, kennen wir die Verteilung nicht!**
+:::
+
+```{r}
+#| echo: false
+#| fig.align: "center"
+library(bayestestR)
+N = 2000
+
+set.seed(1234)
+m <- 160.1
+s <- 7
+norm_df <- data.frame(
+  var = distribution_normal(N, mean = m, sd = s)
+)
+girls <- data.frame(height = rnorm(800, mean = m, s = s))
+s_set <- vector()
+s_values <- vector()
+l_set <- vector()
+l_values <- vector()
+s_size <- 28 # small sample size
+l_size <- 80 # large sample size
+
+for (i in 1:10){
+  s_set_i <- rep(i, s_size)
+  # s_values_i <- sample(norm_df$var, size = s_size)
+  # s_values_i <- rnorm(s_size, mean = m, s = s)
+  s_values_i <- sample(norm_df$var, size = s_size)
+  s_set <- c(s_set, s_set_i)
+  s_values <- c(s_values, s_values_i)
+  
+  l_set_i <- rep(i, l_size)
+  # l_values_i <- sample(norm_df$var, size = l_size)
+  # l_values_i <- rnorm(l_size, mean = m, s = s)
+  l_values_i <- sample(norm_df$var, size = l_size)
+  l_set <- c(l_set, l_set_i)
+  l_values <- c(l_values, l_values_i)
+}
+
+qq_small_df <- data.frame(
+  set = as.factor(s_set),
+  values = s_values,
+  size = as.factor(s_size)
+)
+
+qq_large_df <- data.frame(
+  set = as.factor(l_set),
+  values = l_values,
+  size = as.factor(l_size)
+)
+
+pqq1 <- ggplot(qq_small_df, aes(sample = values)) +
+  stat_qq( alpha = .5) +
+  stat_qq_line(color = "red") +
+  labs(x = "",
+       y = "",
+       title = sprintf("QQ-Plots für Stichproben vom Umfang n = %.0f", s_size)) +
+  facet_wrap(.~set, nrow = 2, ncol = 5)
+
+pqq2 <- ggplot(qq_large_df, aes(sample = values)) +
+  stat_qq( alpha = .5) +
+  stat_qq_line(color = "red") +
+  labs(x = "",
+       y = "",
+       title = sprintf("QQ-Plots für Stichproben vom Umfang n = %.0f", l_size)) +
+  facet_wrap(.~set, nrow = 2, ncol = 5)
+qq_df <- bind_rows(qq_small_df, qq_large_df)
+
+phist1 <- ggplot(qq_small_df, aes(x=values)) +
+   geom_histogram(binwidth = 1) +
+  labs(x = "",
+       y = "",
+       title = sprintf("Histogramme für Stichproben vom Umfang n = %.0f", s_size)) +
+  facet_wrap(.~set, nrow = 2, ncol = 5)
+
+phist2 <- ggplot(qq_large_df, aes(x=values)) +
+   geom_histogram() +
+  labs(x = "",
+       y = "",
+       title = sprintf("Histogramme für Stichproben vom Umfang n = %.0f", l_size)) +
+  facet_wrap(.~set, nrow = 2, ncol = 5)
+
+pnormpop <- ggplot(norm_df, aes(x=var)) +
+   geom_histogram(binwidth = 1) +
+  labs(x = "",
+       y = "",
+       title = sprintf("Normalveteilte Population N = %.0f, Mean = %.1f cm, SD = %.1f cm",
+                       N, m, s))
+```
+
+```{r}
+#| echo: false
+#| fig.align: "center"
+#| fig-width: 18
+#| fig-height: 10
+# pqq1
+# pqq2
+# phist1
+# phist2
+(phist1/pqq1)|(phist2/pqq2)
+```
+
+::: {.notes}
+- give some hints
+:::
 
 ## Zusammenfassung {.smaller}
 
@@ -1131,3 +1290,7 @@ plt_norm_qq_nolabels
 ```
 :::
 ::::
+
+::: {.notes}
+- give some hints
+:::
