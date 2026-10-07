@@ -23,6 +23,6 @@ weight: 3
 {{< pdf "/slides/BSc-WS2-Verteilungen-Wahrscheinlichkeit-light.pdf" >}}
 
 {{< cards cols="1">}}
-  {{< card link="/open-healthstat-edu/workshops/_site/bsc/WS2-Verteilungen-Wahrscheinlichkeit.html" title="Zum Workshop Verteilungen von Wahrscheinlichkeiten" icon="link" >}}
+  {{< card link="https://bern-movement-lab.github.io/statworkshop/bsc/WS2-Verteilungen-Wahrscheinlichkeit.html" title="Zum Workshop Verteilungen von Wahrscheinlichkeiten" icon="link" >}}
 {{< /cards >}}
 <!-- [Zum Workshop Verteilungen von Wahrscheinlichkeiten](/workshops/_site/bsc/WS2-Verteilungen-Wahrscheinlichkeit.html) -->
