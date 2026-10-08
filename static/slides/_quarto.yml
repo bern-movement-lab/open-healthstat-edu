@@ -22,5 +22,3 @@ embed-resources: true
 
 bibliography: bibliography.bib
 
-execute:
-  freeze: auto
