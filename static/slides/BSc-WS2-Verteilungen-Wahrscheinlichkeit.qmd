@@ -754,8 +754,8 @@ dens = dnorm(z_scores)
 df = data.frame(z_scores,dens)
 ggplot() + geom_line(data = df, aes(z_scores,dens), size=2) +
   ggtitle("Dichtefunktion der Standard-Normalverteilung") +
-  labs(y="Dichte", x="z-Wert") +
-  scale_x_discrete(limits=c(-3,-2,-1,0,1,2,3))
+  labs(y="Dichte", x="z-Wert")
+  ## scale_x_discrete(limits=c(-3,-2,-1,0,1,2,3))
 
 ```
 
