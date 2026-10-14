@@ -1,6 +1,71 @@
 /.quarto/
 **/*.quarto_ipynb
 
-# large html output files
+# html output files created through make process
 *-light.html
 *-dark.html
+# html outputs files created through single file render
+BSc-Intro-Jamovi.html
+BSc-LE1-Deskriptive-Statistik.html
+BSc-LE2-Verteilungen-Wahrscheinlichkeit.html
+BSc-LE3-Grundlagen-Inferenz.html
+BSc-LE4-Vergleich-Mittelwerte.html
+BSc-LE5-Korrelation-Regression.html
+BSc-LE6-Inferenz-Kategoriell.html
+BSc-WS1-Deskriptive-Statistik.html
+BSc-WS2-Verteilungen-Wahrscheinlichkeit.html
+BSc-WS3-Grundlagen-Inferenz.html
+BSc-WS4-Vergleich-Mittelwerte.html
+BSc-WS5-Korrelation-Regression.html
+BSc-WS6-Inferenz-Kategoriell.html
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.RDataTmp
+
+# User-specific files
+.Ruserdata
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# knitr and R markdown default cache directories
+*_cache/
+/cache/
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
+# R Environment Variables
+.Renviron
+.env
+
+# pkgdown site
+docs/
+
+# translation temp files
+po/*~
+
+# RStudio Connect folder
+rsconnect/
