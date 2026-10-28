@@ -18,7 +18,7 @@ weight: 4
 
 ## Workshop
 
-{{< pdf "/slides/BSc-WS3-Grundlagen-Inferenz-light.pdf" >}}
+<!-- {{< pdf "/slides/BSc-WS3-Grundlagen-Inferenz-light.pdf" >}} -->
 
 {{< cards cols="1">}}
   {{< card link="https://bern-movement-lab.github.io/statworkshop/bsc/WS3-Grundlagen-Inferenz.html" title="Zum Workshop Grundlagen Inferenzstatistik" icon="link" >}}
