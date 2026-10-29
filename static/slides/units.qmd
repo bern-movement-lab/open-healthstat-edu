@@ -1,0 +1,27 @@
+---
+title: "Quarto Playground"
+format:
+  html:
+    html-math-method: mathjax
+    include-in-header:
+      text: |
+        <script>
+        window.MathJax = {
+          loader: {
+            load: ['[custom]/siunitx.js', '[tex]/html', '[tex]/gensymb'],
+            paths: { custom: './assets/' }
+          },
+          tex: {
+            packages: { '[+]': ['siunitx', 'html', 'gensymb'] },
+            siunitx: {
+              'per-mode': 'power'
+            }
+          }
+        };
+        </script>
+---
+
+- $\unit{kg.m.s^{-1}}$
+- $\unit{\micro\meter}$
+- $\unit{\um}$
+- $\unit{\joule\per\mole\per\kelvin}$
