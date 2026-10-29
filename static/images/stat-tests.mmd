@@ -1,0 +1,29 @@
+flowchart LR
+    A[Eine Stichprobe]
+    B[Zwei Stichproben]
+    A --> A1[N > 100] 
+    A1 --> A11[Students' t]
+    A --> A2[Kleiner Umfang]
+    A2 --> A11[Normalverteilt]
+    A2 --> A12[Nicht Normalverteilt]
+    A11 --> A111[Students' t]
+    A12 --> A121[Wilcoxon Rank WVR-Test]
+    
+    B --> B1[Abhängige Stichproben]
+    B1 --> B11[N > 100] 
+    B1 --> B12[Kleiner Umfang] 
+    B12 --> B121[Differenzen Normalverteilt]
+    B11 --> B121
+    B121 --> B1211[Students's t paired]
+    B12 --> B122[Differenzen Nicht Normalverteilt]
+    B122 --> B1221[Wilcoxon Rank WVR-Test]
+
+    B --> B2[Unabhängige Stichproben]
+    B2 --> B21[N > 100 in jeder Gruppe] 
+    B2 --> B22[Kleiner Umfang]
+    B22 --> B221[Normalverteilt in jeder Gruppe]
+    B21 --> B221
+    B22 --> B222[Nicht Normalverteilt]
+    B221 --> B2211[Varianzen gleich: Students' t]
+    B221 --> B2212[Varianzen ungleich: Welchs' t]
+    B222 --> B2221[Mann-Whiney U WR-Test]

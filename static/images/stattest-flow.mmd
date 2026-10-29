@@ -1,0 +1,7 @@
+flowchart TD
+    A[Wiss. Hypothese]
+    A --> B[Stat. Hypothese]
+    B --> C[Daten erheben]
+    C --> D{Stat. Testen}
+    D --> |H0 plausibel| E[H0 nicht verwerfen]
+    D --> |H0 nicht plausibel| F[H0 verwerfen]

@@ -10,6 +10,23 @@ format:
       # chalkboard: true # only works when not embedding resources
       template-partials:
         - title-slide.html
+      html-math-method: mathjax
+      include-in-header:
+        text: |
+          <script>
+          window.MathJax = {
+            loader: {
+              load: ['[custom]/siunitx.js', '[tex]/html', '[tex]/gensymb'],
+              paths: { custom: './assets/' }
+            },
+            tex: {
+              packages: { '[+]': ['siunitx', 'html', 'gensymb'] },
+              siunitx: {
+                'per-mode': 'power'
+              }
+            }
+          };
+          </script>
     revealjs-dark:
       slide-number: true
       theme: [dark, styles.scss]
@@ -18,6 +35,23 @@ format:
       # chalkboard: true # only works when not embedding resources
       template-partials:
         - title-slide.html
+      html-math-method: mathjax
+      include-in-header:
+        text: |
+          <script>
+          window.MathJax = {
+            loader: {
+              load: ['[custom]/siunitx.js', '[tex]/html', '[tex]/gensymb'],
+              paths: { custom: './assets/' }
+            },
+            tex: {
+              packages: { '[+]': ['siunitx', 'html', 'gensymb'] },
+              siunitx: {
+                'per-mode': 'power'
+              }
+            }
+          };
+          </script>
 embed-resources: true
 
 bibliography: bibliography.bib
