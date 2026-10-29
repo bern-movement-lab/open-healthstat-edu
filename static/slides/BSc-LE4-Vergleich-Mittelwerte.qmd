@@ -71,7 +71,7 @@ $$
 Wir schreiben nicht
 
 $$
-\bar{x}_w = \bar{x}_m
+\bar{x}_w \neq \bar{x}_m
 $$
 
 da sich die Hypothese auf die Population und nicht die Stichprobe bezieht!
@@ -102,7 +102,7 @@ Alternativhypothese $H_A$ (oft auch $H_1$) - wissenschaftliche Hypothese
 - Enthält in der Regel die Motivation eines Experimentes. 
 
 $$
-H_0: \mu_w \neq \mu_m
+H_A: \mu_w \neq \mu_m
 $$
 
 ## Daten erheben {.smaller}
@@ -134,21 +134,11 @@ plt <- ggplot(df.stud, mapping = aes(x = Geschlecht, y = Groesse)) +
     theme(text = element_text(size = 22))
 ```
 
-:::: {.columns}
-
-::: {.column width="50%"}
-
 ```{r}
 #| out.width: "100%"
 #| fig.align: "center"
-#| fig.width: 4
-#| fig.height: 4
 plt 
 ```
-
-:::
-
-::: {.column width="50%"}
 
 ```{r}
 #| out.width: "60%"
@@ -157,10 +147,6 @@ tbl <- table1(~Gewicht | Geschlecht,
               overall = FALSE)
 t1kable(tbl)
 ```
-
-:::
-
-::::
 
 ::: {.notes}
 - Passend zu den formulierten Hypothesen entwickelt man ein Versuchsdesign.
@@ -508,9 +494,9 @@ $$
 
 ![](../images/Ex_Part5_Stichprobenstreuungen_180_166_s10_n20.png){fig-align="center" width=100%}
 
-- Signifikanzniveau $\alpha = 0.05$
-- True (-): 38 / False (+): 2
-- $\alpha = \frac{2}{40} = 0.05$
+- Theoretische Power: 0.991
+- True (+): 39 / False (-): 1
+- $(1-\beta) = \frac{39}{40} = 0.975$
 
 :::
 
@@ -637,7 +623,7 @@ outdf |>
 - Ablehnung der Nullhypothese heisst nicht, dass die Alternativhypothese wahr ist (kein Beweisen!)
 - Nicht-Ablehnung der Nullhypothese heisst nicht, dass diese wahr ist.
 - Hypothesen können nur widerlegt, aber nicht bewiesen werden (Prinzip der Falsifikation)
-- Hypothesen müssen sich bewähren und sind so lange Gültig, bis Evidenz **dagegen** gefunden wird.
+- Hypothesen müssen sich bewähren und sind so lange gültig, bis Evidenz **dagegen** gefunden wird.
 :::
 
 ::::
