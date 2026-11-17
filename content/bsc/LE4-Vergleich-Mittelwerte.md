@@ -18,7 +18,7 @@ weight: 5
 
 ## Workshop
 
-{{< pdf "/slides/BSc-WS4-Vergleich-Mittelwerte-light.pdf" >}}
+<!-- {{< pdf "/slides/BSc-WS4-Vergleich-Mittelwerte-light.pdf" >}} -->
 
 {{< cards cols="1">}}
   {{< card link="https://bern-movement-lab.github.io/statworkshop/bsc/WS4-Vergleich-Mittelwerte.html" title="Zum Workshop Vergleich von Mittelwerten" icon="link" >}}
