@@ -12,17 +12,16 @@ weight: 7
 
 ## Slides
 
-{{< pdf "/slides/BSc-LE6-Inferenz-Kategoriell-light.pdf" >}}
+<!-- {{< pdf "/slides/BSc-LE6-Inferenz-Kategoriell-light.pdf" >}} -->
+{{< pdf "/downloads/bsc/HEB_LE6_Kat.pdf" >}}
 
 ## Screencast
 
-> [!IMPORTANT]
-> Aufzeichnung der Vorlesung folgt.
+{{< youtube kC7FaZML6KA >}}
 
-<!-- {{< youtube 9j_OYIy0bUk >}} -->
 ## Workshop
 
-{{< pdf "/slides/BSc-WS6-Inferenz-Kategoriell-light.pdf" >}}
+<!-- {{< pdf "/slides/BSc-WS6-Inferenz-Kategoriell-light.pdf" >}} -->
 
 {{< cards cols="1">}}
   {{< card link="https://bern-movement-lab.github.io/statworkshop/bsc/WS6-Inferenz-Kategoriell.html" title="Zum Workshop Inferenzstatistik Kategoriell" icon="link" >}}

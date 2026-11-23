@@ -11,18 +11,16 @@ weight: 6
 
 ## Slides
 
-{{< pdf "/slides/BSc-LE5-Korrelation-Regression-light.pdf" >}}
+<!-- {{< pdf "/slides/BSc-LE5-Korrelation-Regression-light.pdf" >}} -->
+{{< pdf "/downloads/bsc/PHY_LE5_KorrReg.pdf" >}}
 
 ## Screencast
 
-> [!IMPORTANT]
-> Aufzeichnung der Vorlesung folgt.
-
-<!-- {{< youtube 9j_OYIy0bUk >}} -->
+{{< youtube 5kzI7heH33k >}}
 
 ## Workshop
 
-{{< pdf "/slides/BSc-WS5-Korrelation-Regression-light.pdf" >}}
+<!-- {{< pdf "/slides/BSc-WS5-Korrelation-Regression-light.pdf" >}} -->
 
 {{< cards cols="1">}}
   {{< card link="https://bern-movement-lab.github.io/statworkshop/bsc/WS5-Korrelation-Regression.html" title="Zum Workshop Korrelation & Regression" icon="link" >}}
