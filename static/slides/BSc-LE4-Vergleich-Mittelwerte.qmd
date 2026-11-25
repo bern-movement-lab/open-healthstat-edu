@@ -142,7 +142,7 @@ plt
 
 ```{r}
 #| out.width: "60%"
-tbl <- table1(~Gewicht | Geschlecht,
+tbl <- table1(~Groesse | Geschlecht,
               data = df.stud,
               overall = FALSE)
 t1kable(tbl)
@@ -330,7 +330,7 @@ plt
 
 ```{r}
 library(jmv)
-tres <- ttestIS(formula = Gewicht ~ Geschlecht,
+tres <- ttestIS(formula = Groesse ~ Geschlecht,
         meanDiff = TRUE,
         ci = TRUE,
         data = df.stud)
@@ -377,7 +377,6 @@ Der p-Wert ist **nicht**
 
 - [M. Baker, “Statisticians issue warning over misuse of p values,” vol. 531, pp. 151–151, 2016.](https://doi.org/10.1038/nature.2016.19503) 
 - [https://www.horizonte-magazin.ch/2019/03/07/braucht-es-den-statistischen-schwellenwert-noch/](https://www.horizonte-magazin.ch/2019/03/07/braucht-es-den-statistischen-schwellenwert-noch/) 
-- [https://www.nzz.ch/karriere/studentenleben/der-problem-wert-ld.133818](https://www.nzz.ch/karriere/studentenleben/der-problem-wert-ld.133818) 
 
 :::
 
